@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <!-- mengatur agar karakter teks tampil dengan benar -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- membuat tampilan web menyesuaikan ukuran layar perangkat (responsif) -->
+
+  <title>profil & cerita gunung</title>
+  <style>
+    /* mengatur tampilan dasar seluruh halaman */
+    body {
+      background-color: #ffe4e1;
+      margin: 0; 
+      font-family: arial, sans-serif; 
+      line-height: 1.6; 
+      color: #333; 
+    }
+
+    /* tampilan judul utama */
+    h1 {
+      color: black;
+      text-align: center; 
+      margin-top: 20px; 
+    }
+
+    /* tampilan paragraf */
+    p {
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    /* membuat gambar menjadi responsif dan membulat di sudut */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+    }
+
+    /* tampilan untuk link */
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    /* saat kursor diarahkan ke link */
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* tampilan kotak konten utama */
+    .section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: #fff0f5;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* garis pemisah antar bagian */
+    hr {
+      border: 0;
+      height: 2px;
+      background: #ccc;
+      margin: 20px 0;
+    }
+
+    /* bagian kontak: layout 1 kolom */
+    .contact-info {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    /* jika layar lebih besar dari 600px, jadikan 2 kolom */
+    @media (min-width: 600px) {
+      .contact-info {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- bagian pertama: tentang gunung -->
+  <div class="section">
+    <h1>gunung merbabu</h1>
+    <hr>
+    
+    <!-- gambar gunung -->
+    <img src="merbabu2.jpg" alt="gunung merbabu via suwanting">
+
+    <!-- deskripsi gunung -->
+    <p>
+      gunung merbabu merupakan gunung dengan ketinggian 3142 mdpl, berada di kabupaten magelang, jawa tengah.
+      jalur yang populer adalah via suwanting, yang dikenal menantang dan panjang, apalagi saat musim hujan.
+    </p>
+  </div>
+
+  <!-- bagian kedua: biodata penulis -->
+  <div class="section">
+    <h1>penulis</h1>
+    <hr>
+
+    <!-- foto penulis -->
+    <img src="aphrodyta.jpeg.jpg" alt="foto penulis aphrodyta">
+
+    <!-- informasi penulis -->
+    <p>
+      aphrodyta salsa<br>
+      225410056 || informatika - 2<br>
+      mahasiswi utenti (universitas teknologi digital indonesia) yang lahir di yogyakarta, 30 april 2003.
+    </p>
+
+    <!-- bagian kontak sosial media -->
+    <div class="contact-info">
+      <div>
+        <strong>whatsapp:</strong><br>
+        <a href="https://wa.me/qr/3uoaszjuwntcj1">hubungi aphrodyta</a>
+      </div>
+      <div>
+        <strong>instagram:</strong><br>
+        <a href="https://instagram.com/aphrodytasls_?igshid=zddkntzintm=">kunjungi instagram</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
